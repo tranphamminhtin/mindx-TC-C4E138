@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header .brand-name {
+  font-size: 36px;
+}
+
+.header .menu {
+  display: flex;
+}
+
+.header .menu .menu-item {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form {
+  background-color: #ececec;
+  width: 20%;
+  text-align: center;
+}
+
+.search-form .search-input {
+  width: 80%;
+  margin: 20px 10px 10px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.search-form .search-btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 10px;
+  height: fit-content;
+}
+
+.product-list .col {
+  width: 25%;
+  padding: 10px;
+}
+
+.col img {
+  width: 100%;
+}
+
+.col .product-item {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-item .product-detail {
+  padding: 10px;
+}
+
+.product-item .product-name {
+  font-size: 30px;
+}
+
+.product-item .product-price {
+  font-size: 22px;
+  color: red;
+}
+
+.footer {
+  padding: 10px;
+  font-size: 22px;
+  background-color: #d3d3d3;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
