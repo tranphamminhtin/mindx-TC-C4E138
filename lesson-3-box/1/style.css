@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.container .search-items input {
+  font-size: 20px;
+  padding: 5px 15px;
+  width: 100%;
+}
+.container .menu {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.menu .menu-group {
+  color: #6d6f71;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.menu .menu-item:hover {
+  background-color: rgb(228, 228, 228);
+}
+.menu-item .item-image img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.menu-item .item-name {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.menu-item .old-price {
+  font-size: 16px;
+  color: #6d6f71;
+  text-decoration: line-through;
+}
+
+.menu-item .new-price {
+  color: #0288d1;
+  font-weight: bold;
+}
+
+.menu-item .btn-add-item {
+  color: white;
+  background-color: red;
+  border: 0;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.menu-item {
+  display: flex;
+}
+
+.menu-item .price {
+  margin-left: auto;
+}
