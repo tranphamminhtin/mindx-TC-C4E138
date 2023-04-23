@@ -1,0 +1,80 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #d0fcfb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Coming Soon", sans-serif;
+}
+
+h1 {
+  font-family: "Dancing Script";
+  border: 5px solid #a6c9c8;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.noti {
+  font-weight: bold;
+}
+
+.text-box {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-box-item {
+  border: 5px solid #a6c9c8;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 64px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hint-text {
+  font-style: italic;
+}
+
+.guess-left-count {
+  color: #f00;
+  font-weight: bold;
+}
+
+.guess-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.guess-form input {
+  width: 70px;
+  height: 100px;
+  font-size: 64px;
+  text-align: center;
+  font-family: "Coming Soon";
+  border: 5px solid #a6c9c8;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+}
+
+.guess-form button {
+  padding: 16px 32px;
+  font-size: 32px;
+  font-family: "Coming Soon";
+  background-color: #a6c9c8;
+  color: #fff;
+  border: 0px;
+  border-radius: 20px;
+}

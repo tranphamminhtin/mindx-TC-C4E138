@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>⭐ Guess the word ⭐</h1>
+    <p class="noti">Start your game by typing to the input below</p>
+    <div class="text-box">
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+      <div class="text-box-item">*</div>
+    </div>
+    <p class="hint-text">
+      Hint: <span>This is a programming language of the Web</span>
+    </p>
+    <p>You have <span class="guess-left-count">3</span> guess(es) remaining</p>
+    <form class="guess-form">
+      <div>Type one letter</div>
+      <input maxlength="1" />
+      <button type="submit">Guess</button>
+    </form>
+
+    <!-- Scripts -->
+    <script src="./mindx.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
