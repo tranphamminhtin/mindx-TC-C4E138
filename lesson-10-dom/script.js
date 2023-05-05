@@ -13,9 +13,9 @@ const input = document.getElementById("input"); // lấy element
 input.value = "input changed";
 input.style.backgroundColor = "red";
 
-function hello(event) {
+function hello(id) {
   // console.log(event);
-  console.log(event.target.id); // lấy id của thẻ button
+  console.log(id); // lấy id của thẻ button
   // alert("hello");
 }
 
@@ -34,7 +34,7 @@ function ThemSanPham(product) {
 function ThemSanPham2(product) {
   const productListElement = document.getElementById("product-list");
 
-  const item = `<li>${product}</li>`;
+  const item = `<li id="${product.id}" onclick="hello('${product.id}')">${product.name}</li>`;
   // const item = "<li>" + product + "</li>"; // <li>Water</li>
   productListElement.innerHTML += item;
 }
@@ -51,7 +51,7 @@ const products = [
 
 function TaoListSanPham(productList) {
   for (const p of productList) {
-    ThemSanPham(p); // { name: "Coffee", id: "cf" }
+    ThemSanPham2(p); // { name: "Coffee", id: "cf" }
   }
 }
 TaoListSanPham(products);
