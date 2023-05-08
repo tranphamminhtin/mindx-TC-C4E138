@@ -118,3 +118,20 @@ const asd = array2.reduce(
   },
   { sochan: 0, sole: 0 }
 );
+
+function taomang(n) {
+  const array = [];
+  for (let i = 1; i <= n; i++) {
+    array.push(i);
+  }
+  return array;
+}
+console.log(taomang(5));
+
+function sumArray(array) {
+  return array.reduce((result, item) => {
+    result += item;
+    return result;
+  }, 0);
+}
+console.log(sumArray([5, 1, 8, 0, 4, 10]));
