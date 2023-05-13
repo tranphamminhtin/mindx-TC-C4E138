@@ -1,6 +1,6 @@
 function taomang(a, b) {
   const array = [];
-  for (let i = +a; i <= +b; i++) {
+  for (let i = a; i <= b; i++) {
     console.log(i);
     array.push(i);
   }
@@ -52,11 +52,20 @@ function getNumberB() {
 }
 
 function clickBtn() {
-  const soA = getNumberA();
-  const soB = getNumberB();
-  const array = taomang(soA, soB);
-  const sum = sumArray(array);
-  console.log(soA, soB, array, sum);
+  const soA = +getNumberA();
+  const soB = +getNumberB();
+  // cách 1
+  // const array = taomang(soA, soB);
+  // const sum = sumArray(array);
+  // console.log(soA, soB, array, sum);
+
+  // cách 2
+  let sum = 0;
+  for (let i = soA; i <= soB; i++) {
+    if (isPrimeNumber(i)) {
+      sum += i;
+    }
+  }
   const sumElement = document.getElementById("sum");
   sumElement.innerHTML = sum;
 }
